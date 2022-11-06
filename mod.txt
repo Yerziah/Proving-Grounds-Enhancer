@@ -4,7 +4,7 @@
 	"author": "Yerziah",
 	"contact": "Yerziah#3180",
 	"version": "1.0",
-    "keybinds" : [
+        "keybinds" : [
 		{
 			"keybind_id" : "keybind_proving_revive",
 			"name" : "Revive",
