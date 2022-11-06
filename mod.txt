@@ -1,0 +1,21 @@
+{
+	"name": "Proving Grounds Revive",
+	"description": "Allows you to revive yourself by the press of a bind in the Proving Grounds custom map",
+	"author": "Yerziah",
+	"contact": "Yerziah#3180",
+	"version": "1.0",
+    "keybinds" : [
+		{
+			"keybind_id" : "keybind_proving_revive",
+			"name" : "Revive",
+			"description" : "Revive in Proving Grounds",
+			"script_path" : "lua/code.lua",
+			"run_in_menu" : false,
+			"run_in_game" : true,
+			"localized" : false
+		}
+	],
+	"hooks": [
+		{ "hook_id" : "lib/managers/playermanager", "script_path" : "lua/code.lua" }
+	]
+}
