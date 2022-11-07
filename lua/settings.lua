@@ -42,8 +42,8 @@ Hooks:Add( "MenuManagerInitialize", "MenuManagerInitialize_PGEnhance", function(
     end
 
     function MenuCallbackHandler:set_current_health(item)
-        if Utils:IsInHeist() and managers.job:current_level_id() == "modders_devmap" and Global.game_settings.single_player then
-            local player = managers.player:player_unit()
+	local player = managers.player:player_unit()
+        if alive(player) and managers.job:current_level_id() == "modders_devmap" and Global.game_settings.single_player then
             PGEnhance.Settings.current_health = item:value() * player:character_damage():_max_health() / 100
 
             player:character_damage():set_health(PGEnhance.Settings.current_health)
