@@ -1,0 +1,7 @@
+{
+	"pg_enhance_title" : "Proving Grounds Utility",
+	"pg_enhance_desc" : "Proving Grounds Utility Settings",
+
+	"current_health_title" : "Health Percentage",
+	"current_health_description" : "Percentage of your health for Berserker",
+}

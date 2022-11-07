@@ -1,15 +1,18 @@
 {
-	"name": "Proving Grounds Revive",
-	"description": "Allows you to revive yourself by the press of a bind in the Proving Grounds custom map",
+	"name": "Proving Grounds Enhancer",
+	"description": "Allows you to revive yourself by the press of a bind in the Proving Grounds custom map, and apply a percentage of Berserker through mod options",
 	"author": "Yerziah",
 	"contact": "Yerziah#3180",
 	"version": "1.0",
-        "keybinds" : [
+	"hooks": [
+		{ "hook_id" : "lib/managers/menumanager" "script_path" : "lua/settings.lua" }
+	],
+    "keybinds" : [
 		{
 			"keybind_id" : "keybind_proving_revive",
 			"name" : "Revive",
 			"description" : "Revive in Proving Grounds",
-			"script_path" : "lua/code.lua",
+			"script_path" : "lua/revive.lua",
 			"run_in_menu" : false,
 			"run_in_game" : true,
 			"localized" : false

@@ -1,0 +1,21 @@
+{
+    "menu_id" : "pg_enhance_menu",
+    "parent_menu_id" : "blt_options",
+    "title" : "pg_enhance_title",
+    "description" : "pg_enhance_desc",
+	"back_callback" : "PGEnhanceSave",
+    "items" : [
+        {
+            "type" : "slider",
+            "id" : "current_health",
+            "title" : "current_health_title",
+            "description" : "current_health_description",
+            "callback" : "set_current_health",
+            "value" : "current_health"
+            "default_value" : 100,
+            "max" : 100,
+            "min" : 1,
+            "step" : 1,
+        }
+    ]
+}
